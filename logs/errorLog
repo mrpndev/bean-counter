@@ -40,3 +40,4 @@
 11/14/2026 11:58:24 AM: TypeError [ERR_INVALID_ARG_TYPE]: The "headers" argument must be an instance of Headers or Map. Received type string ('Access-Control-Allow-Origin')
 11/14/2026 11:58:24 AM: TypeError [ERR_INVALID_ARG_TYPE]: The "headers" argument must be an instance of Headers or Map. Received type string ('Access-Control-Allow-Origin')
 11/14/2026 12:04:05 PM: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.
+11/21/2026 11:42:09 AM: SequelizeUniqueConstraintError: Validation error
