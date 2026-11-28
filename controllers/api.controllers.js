@@ -10,7 +10,7 @@ const getByID = function (req, res) {
 	res.status(200).send(`id route hit ${id}`);
 };
 
-const addData = function (req, res) {
+const addData = async function (req, res) {
 	/* 
 		? Challenge
 		* utilize sequelize to add a recipe into the datbase
@@ -35,9 +35,9 @@ const addData = function (req, res) {
 		time,
 	} = req.body;
 
-	console.log(req.body)
+	const newRecipe = await Recipe.create(req.body)
 	
-	res.status(201).json({});
+	res.status(201).json(newRecipe);
 };
 
 const modifyData = function (req, res) {

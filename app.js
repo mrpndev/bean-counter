@@ -15,13 +15,14 @@ const errorHandler = require("./middlewares/errorHandler");
 const rateLimiter = require("./middlewares/rateLimiter");
 const authLogger = require("./middlewares/authLogger");
 const customHeaders = require("./middlewares/headers");
+const authToken = require("./middlewares/authToken")
 
 app.use(rateLimiter);
 app.use(customHeaders);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // TODO: protect our coffee!!!!
-app.use("/api/v1/coffee", apiRoutes);
+app.use("/api/v1/coffee", authToken, apiRoutes);
 app.use("/api/v1/auth", emailValidator, authLogger, authRoutes);
 // must be last to catch 'em all (errors, not Pokemons)
 app.use(errorHandler);

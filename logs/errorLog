@@ -41,3 +41,14 @@
 11/14/2026 11:58:24 AM: TypeError [ERR_INVALID_ARG_TYPE]: The "headers" argument must be an instance of Headers or Map. Received type string ('Access-Control-Allow-Origin')
 11/14/2026 12:04:05 PM: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.
 11/21/2026 11:42:09 AM: SequelizeUniqueConstraintError: Validation error
+11/28/2026 9:34:25 AM: Error: Invalid salt version: 11
+11/28/2026 9:34:43 AM: Error: Invalid salt version: 11
+11/28/2026 9:34:54 AM: Error: Invalid salt version: 10
+11/28/2026 9:53:05 AM: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+11/28/2026 9:53:59 AM: Error: Invalid username or password
+11/28/2026 9:56:26 AM: Error: Invalid username or password
+11/28/2026 11:25:06 AM: TypeError: Assignment to constant variable.
+11/28/2026 11:35:16 AM: ReferenceError: error is not defined
+11/28/2026 11:48:00 AM: SequelizeUniqueConstraintError: Validation error
+11/28/2026 11:48:39 AM: SequelizeUniqueConstraintError: Validation error
+11/28/2026 11:51:23 AM: SequelizeValidationError: notNull Violation: recipe.coffeeName cannot be null
